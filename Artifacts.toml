@@ -1,0 +1,151 @@
+[[argon2]]
+arch = "aarch64"
+git-tree-sha1 = "7e0f6af89d4c495833db9191cf8717f5cea04c2a"
+os = "macos"
+
+    [[argon2.download]]
+    sha256 = "90b98b57a9b2e07e6b7fb3ba672f7b4c06127a9da999c3587b1d31be902fcf0f"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.aarch64-apple-darwin.tar.gz"
+[[argon2]]
+arch = "aarch64"
+git-tree-sha1 = "aa682f82d39e338d8af300d7c80a1dc043d71d9e"
+libc = "glibc"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "cf4c6987d9e96ade7696ec2c77b71656b556e6bdc4bd9e0156bb8cf13009aeb8"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.aarch64-linux-gnu.tar.gz"
+[[argon2]]
+arch = "aarch64"
+git-tree-sha1 = "df70cf340f7f0d6ec7484854c1794c04d4b6dad9"
+libc = "musl"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "89aa5fb2754649e3873cc3681a6cb62a01440d9fa7c0a5f7c619dd66100d7b76"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.aarch64-linux-musl.tar.gz"
+[[argon2]]
+arch = "aarch64"
+git-tree-sha1 = "c4c731bdd29fb1991479b33b7067f1920d761950"
+os = "freebsd"
+
+    [[argon2.download]]
+    sha256 = "f95adfa5491c3e70ad1dfdf9b32c133fe7d87b3dd7783ab8c29db5bdfc1560cf"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.aarch64-unknown-freebsd.tar.gz"
+[[argon2]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "5aefcec617b617f830d7cad557ffa12763940a7d"
+libc = "glibc"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "504a7e9d02fdc6eb12594c2d5742cd7aab15d2ec99f4810435e0a4eb96c81f18"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.armv6l-linux-gnueabihf.tar.gz"
+[[argon2]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "354144c6c0db033484187c529f808c36c9671496"
+libc = "musl"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "3a283f89cfa9a3784fb3e9330ddea8ea53d15e908c402a6f10be03ceea6e5ab4"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.armv6l-linux-musleabihf.tar.gz"
+[[argon2]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "c522a10c31b47de5108bb052c018e5622c472bcd"
+libc = "glibc"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "6fb3603e0f8291db4f42629b0b03ddf32b298c68488e325590efcaf633cffb1a"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.armv7l-linux-gnueabihf.tar.gz"
+[[argon2]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "78a82038490b884762f44984ad843dfdc499bd82"
+libc = "musl"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "201ba7369ef38cc6429f5c07c7dce54d43ee7d4a4ca44dc9513ac2994a801e40"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.armv7l-linux-musleabihf.tar.gz"
+[[argon2]]
+arch = "i686"
+git-tree-sha1 = "9850aa80f98afcf35775ceff38cdb992d30527be"
+libc = "glibc"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "1edda2a1cfb9a874103b4ee240e0ee8e4d5ce00613d054c95b89eaa768496a8d"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.i686-linux-gnu.tar.gz"
+[[argon2]]
+arch = "i686"
+git-tree-sha1 = "8c3036f276a29d1d1a4d306e3ce93063f231d337"
+libc = "musl"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "edb5c40ed21e1dbcfaa4a584976918d967cd33909bcd3ac59b3000cbda0d92dd"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.i686-linux-musl.tar.gz"
+[[argon2]]
+arch = "i686"
+git-tree-sha1 = "394cad0c9b06fcda165e8f90b1eee66a938abd4c"
+os = "windows"
+
+    [[argon2.download]]
+    sha256 = "cb625abaf7edd5d477145b5f40f3025c8da1d13914919adc6a5102a18c60d604"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.i686-w64-mingw32.tar.gz"
+[[argon2]]
+arch = "powerpc64le"
+git-tree-sha1 = "07e8700807b98072c8a6c6c6a6df2c295162518c"
+libc = "glibc"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "c3af4fc64ab6c8460b8ff8ea079f89dc5e4bb43c3a314b90ab614ee5eb5001d9"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.powerpc64le-linux-gnu.tar.gz"
+[[argon2]]
+arch = "x86_64"
+git-tree-sha1 = "c37146df765884d62795665d1857e63517975975"
+os = "macos"
+
+    [[argon2.download]]
+    sha256 = "a5b4dfa1aae1bf1703ed89328d197a3f291f4c32a66071ce719c86f72e109426"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.x86_64-apple-darwin.tar.gz"
+[[argon2]]
+arch = "x86_64"
+git-tree-sha1 = "462a2df64624781d0024c1bd650e23b25acfb816"
+libc = "glibc"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "fc804fa7b20e8ec5a37710f5c0d79f25a8ac5c68290ae7b29da05c111ff14ae7"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.x86_64-linux-gnu.tar.gz"
+[[argon2]]
+arch = "x86_64"
+git-tree-sha1 = "afc97ecd9db6cf2a51868740cfb5afe054ae4201"
+libc = "musl"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "7e3aeece3edb64b5283b95da8a48760604d7f8439c2fbe6ea0de2830d72c4f1d"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.x86_64-linux-musl.tar.gz"
+[[argon2]]
+arch = "x86_64"
+git-tree-sha1 = "1387c28b697fe902422b0f7c737339631b65e7ca"
+os = "freebsd"
+
+    [[argon2.download]]
+    sha256 = "029329f6086210c6761b5efe9a480b2158fb179201537fd4f153185ee098e6f9"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.x86_64-unknown-freebsd.tar.gz"
+[[argon2]]
+arch = "x86_64"
+git-tree-sha1 = "78d2a3df40cc4af695dfc4535af0b8beb5129b88"
+os = "windows"
+
+    [[argon2.download]]
+    sha256 = "e940bfe51820d1d74b1c0bb5fb61463143b7430f5cb29c2987cf8a58c0208ed7"
+    url = "https://github.com/local/releases/download/argon2-v20190702.0.0+0/argon2.v20190702.0.0.x86_64-w64-mingw32.tar.gz"
