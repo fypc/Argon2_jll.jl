@@ -1,0 +1,167 @@
+[[argon2]]
+arch = "aarch64"
+git-tree-sha1 = "6c4dbd776cd8dd6eef64a54b068be889332b6805"
+os = "macos"
+
+    [[argon2.download]]
+    sha256 = "daf839cfc72b007654d282c945db01ba413b57db4e1186acdafea551f9cb38c9"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.aarch64-apple-darwin.tar.gz"
+
+[[argon2]]
+arch = "aarch64"
+git-tree-sha1 = "26a44cbf16ccb1fe612259af233b1da14d2ece99"
+libc = "glibc"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "c35ae275ebe1f8ee8a5c480c8b05b5c762cb65899b3f0701807fe77089f4aed8"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.aarch64-linux-gnu.tar.gz"
+
+[[argon2]]
+arch = "aarch64"
+git-tree-sha1 = "28196538014f92170b3bab68c910d65fe00faa64"
+libc = "musl"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "40afe64507d0df977e1c5d89540f626ed28a7b5628ade6b3d28ec30fbd392fed"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.aarch64-linux-musl.tar.gz"
+
+[[argon2]]
+arch = "aarch64"
+git-tree-sha1 = "5bc32f2a5ba81ae1ffd3648c23190a781acc3165"
+os = "freebsd"
+
+    [[argon2.download]]
+    sha256 = "0cb44d334150b62664969b1ce1559618c7b27d6d8e4ab4bcc220159c18dd1fa3"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.aarch64-unknown-freebsd.tar.gz"
+
+[[argon2]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "749468d230ccc64cdfd28cdf5470c44c660b4c71"
+libc = "glibc"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "231be7b7887a76efc20888637b6c3e310d74fd9c0bcb5fcc195a6114bc567197"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.armv6l-linux-gnueabihf.tar.gz"
+
+[[argon2]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "b7d7b6a7974bfd363c2be59f7695f97ea18ec011"
+libc = "musl"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "b4ed6ad024eca7566c5da956ade1aaf556debd734d063fe9e69277736c14023f"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.armv6l-linux-musleabihf.tar.gz"
+
+[[argon2]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "f79c60ca6d74209a9724b43b93a433e41bc68e62"
+libc = "glibc"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "ca7bed28186ac9335c80c7052fcb5c7babd1ff8c3a8044ada2e24eb7d6a07fa0"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.armv7l-linux-gnueabihf.tar.gz"
+
+[[argon2]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "04bbf50f76a3815103a87845027a2368017f831f"
+libc = "musl"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "149e1015015119daae895797b61ff4eaa7fe1b6cb8fcaa90a09498ad87bb1933"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.armv7l-linux-musleabihf.tar.gz"
+
+[[argon2]]
+arch = "i686"
+git-tree-sha1 = "7d5aaed2acc538d5f99a5e4ef30434c7a3310cf3"
+libc = "glibc"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "b2daae9e771d4fcb74569392d24c5f0cc24062678ca65ce6292acbab948000a9"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.i686-linux-gnu.tar.gz"
+
+[[argon2]]
+arch = "i686"
+git-tree-sha1 = "b22c8fec1d88d90a4681372953bbe629186b4b2c"
+libc = "musl"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "e49b1912e90b40a54b42ed8032a2c8ed001e88e9ee43451f4768ac6137d3e4ec"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.i686-linux-musl.tar.gz"
+
+[[argon2]]
+arch = "i686"
+git-tree-sha1 = "ba4c071e3cd8bb9bd7b6065c6ae82aad586397ed"
+os = "windows"
+
+    [[argon2.download]]
+    sha256 = "e608eb5b8aeb04fa82fafacac624b21c9199aa6ea9a02dd69c43c93c5f9fb599"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.i686-w64-mingw32.tar.gz"
+
+[[argon2]]
+arch = "powerpc64le"
+git-tree-sha1 = "70ebedae97f5e92e912a74bcbe319c7516b8f189"
+libc = "glibc"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "47e6790f6c4545880a7a94d88f7249f893d648b2e8ffa7f7a011b42b25a4f62c"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.powerpc64le-linux-gnu.tar.gz"
+
+[[argon2]]
+arch = "x86_64"
+git-tree-sha1 = "4314d27fe37c91dd42d55ba8663feaf8c76c6563"
+os = "macos"
+
+    [[argon2.download]]
+    sha256 = "a4cce836acc6f65047ecae661977f1e08ef414481d242c3d036bb2256df720a3"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.x86_64-apple-darwin.tar.gz"
+
+[[argon2]]
+arch = "x86_64"
+git-tree-sha1 = "214a00ac981098d77fd8591cfc8487f5738ff1fc"
+libc = "glibc"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "c5175ba8faef1dc934d1fb1b07518d13b6c7d24e12638b31a29f35472c28bc26"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.x86_64-linux-gnu.tar.gz"
+
+[[argon2]]
+arch = "x86_64"
+git-tree-sha1 = "fff64b2bee14b05cdbd6d40726f315a5bbebb085"
+libc = "musl"
+os = "linux"
+
+    [[argon2.download]]
+    sha256 = "f2bb8d471a502c18b902549ce6b90f3ef59ba45acd9ea2707b2cab7fe1e55596"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.x86_64-linux-musl.tar.gz"
+
+[[argon2]]
+arch = "x86_64"
+git-tree-sha1 = "2c040523fe444c86e5f9c39563d7ad2b80c95202"
+os = "freebsd"
+
+    [[argon2.download]]
+    sha256 = "d566d891e5aca000d93b96af53eb9d43d9a1894a60fbfe2dbe1dc9cdfc6ec75e"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.x86_64-unknown-freebsd.tar.gz"
+
+[[argon2]]
+arch = "x86_64"
+git-tree-sha1 = "83eb86b244b2029386893b6372391e8eaa38c3b4"
+os = "windows"
+
+    [[argon2.download]]
+    sha256 = "412aa139d6fc5cb1249aa7ebd98b0f162731b9e449e6460ec42cb87a8160c7a7"
+    url = "https://github.com/fypc/Argon2_jll.jl/releases/download/argon2-v20190702.1.0%2B0/argon2.v20190702.1.0.x86_64-w64-mingw32.tar.gz"

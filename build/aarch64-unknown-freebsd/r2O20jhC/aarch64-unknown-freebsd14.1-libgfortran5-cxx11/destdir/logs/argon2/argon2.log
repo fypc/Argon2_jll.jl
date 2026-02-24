@@ -1,0 +1,129 @@
+BinaryBuilder.jl version: 0.6.6
+
+`/bin/bash -l -c 'set -x
+cc --version
+c++ --version
+gcc --version
+g++ --version
+clang --version
+clang++ --version
+objc --version
+f77 --version
+gfortran --version
+ld -v
+'`
++ cc --version
+clang version 18.1.7 (/home/tim/.cache/BinaryBuilder/downloads/clones/llvm-project.git-1df819a03ecf6890e3787b27bfd4f160aeeeeacd50a98d003be8b0893f11a9be 768118d1ad38bf13c545828f67bd6b474d61fc55)
+Target: arm64-unknown-freebsd14.1
+Thread model: posix
+InstalledDir: /opt/x86_64-linux-musl/bin
++ c++ --version
+clang version 18.1.7 (/home/tim/.cache/BinaryBuilder/downloads/clones/llvm-project.git-1df819a03ecf6890e3787b27bfd4f160aeeeeacd50a98d003be8b0893f11a9be 768118d1ad38bf13c545828f67bd6b474d61fc55)
+Target: arm64-unknown-freebsd14.1
+Thread model: posix
+InstalledDir: /opt/x86_64-linux-musl/bin
++ gcc --version
+aarch64-unknown-freebsd14.1-gcc (GCC) 9.1.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
++ g++ --version
+aarch64-unknown-freebsd14.1-g++ (GCC) 9.1.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
++ clang --version
+clang version 18.1.7 (/home/tim/.cache/BinaryBuilder/downloads/clones/llvm-project.git-1df819a03ecf6890e3787b27bfd4f160aeeeeacd50a98d003be8b0893f11a9be 768118d1ad38bf13c545828f67bd6b474d61fc55)
+Target: arm64-unknown-freebsd14.1
+Thread model: posix
+InstalledDir: /opt/x86_64-linux-musl/bin
++ clang++ --version
+clang version 18.1.7 (/home/tim/.cache/BinaryBuilder/downloads/clones/llvm-project.git-1df819a03ecf6890e3787b27bfd4f160aeeeeacd50a98d003be8b0893f11a9be 768118d1ad38bf13c545828f67bd6b474d61fc55)
+Target: arm64-unknown-freebsd14.1
+Thread model: posix
+InstalledDir: /opt/x86_64-linux-musl/bin
++ objc --version
+/bin/bash: line 8: objc: command not found
++ f77 --version
+GNU Fortran (GCC) 9.1.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
++ gfortran --version
+GNU Fortran (GCC) 9.1.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
++ ld -v
+GNU ld (GNU Binutils) 2.33.1
+`/bin/bash -l -c "# Stop if we hit any errors.
+set -e
+
+# If we're running as \`bash\`, then use the \`DEBUG\` and \`ERR\` traps
+if [ \$(basename \$0) = \"bash\" ]; then
+    trap \"RET=\\$?; \
+          trap - DEBUG INT TERM ERR EXIT; \
+          set +e +x; \
+          auto_install_license; \
+          save_env; \
+          exit \\$RET\" \
+        EXIT
+
+    trap \"RET=\\$?; \
+          trap - DEBUG INT TERM ERR EXIT; \
+          set +e +x; \
+          echo Previous command \\$! exited with \\$RET >&2; \
+          save_env; \
+          exit \\$RET\" \
+        INT TERM ERR
+
+    # Start saving everything into our history
+    trap save_history DEBUG
+else
+    # If we're running in \`sh\` or something like that, we need a
+    # slightly slimmer set of traps. :(
+    trap \"RET=\\$?; \
+          echo Previous command exited with \\$RET >&2; \
+          set +e +x; \
+          save_env; \
+          exit \\$RET\" \
+        EXIT INT TERM
+fi
+
+cd \${WORKSPACE}/srcdir/phc-winner-argon2
+
+# Build shared library
+if [[ \"\${target}\" == *-mingw* ]]; then
+    make CC=\"\${CC}\" OPTTARGET=\"\" LIBRARY_EXT=\".dll\"
+    install -Dm755 libargon2.dll \"\${libdir}/libargon2.dll\"
+else
+    make CC=\"\${CC}\" OPTTARGET=\"\" LIBRARY_EXT=\"\${dlext}\"
+    if [[ \"\${target}\" == *-apple-* ]]; then
+        install -Dm755 libargon2.1.dylib \"\${libdir}/libargon2.1.dylib\"
+        ln -sf libargon2.1.dylib \"\${libdir}/libargon2.dylib\"
+        # Fix install name so the library is relocatable
+        install_name_tool -id \"@rpath/libargon2.1.dylib\" \"\${libdir}/libargon2.1.dylib\"
+    else
+        install -Dm755 libargon2.so.1 \"\${libdir}/libargon2.so.1\"
+        ln -sf libargon2.so.1 \"\${libdir}/libargon2.so\"
+    fi
+fi
+
+"`
+Building without optimizations
+cc -std=c89 -O3 -Wall -g -Iinclude -Isrc -pthread  src/argon2.c src/core.c src/blake2/blake2b.c src/thread.c src/encoding.c src/ref.c src/run.c -o argon2
+cc -std=c89 -O3 -Wall -g -Iinclude -Isrc -pthread -shared -fPIC   src/argon2.c src/core.c src/blake2/blake2b.c src/thread.c src/encoding.c src/ref.c -o libargon2.so
+cc -std=c89 -O3 -Wall -g -Iinclude -Isrc -pthread   -c -o src/argon2.o src/argon2.c
+cc -std=c89 -O3 -Wall -g -Iinclude -Isrc -pthread   -c -o src/core.o src/core.c
+cc -std=c89 -O3 -Wall -g -Iinclude -Isrc -pthread   -c -o src/blake2/blake2b.o src/blake2/blake2b.c
+cc -std=c89 -O3 -Wall -g -Iinclude -Isrc -pthread   -c -o src/thread.o src/thread.c
+cc -std=c89 -O3 -Wall -g -Iinclude -Isrc -pthread   -c -o src/encoding.o src/encoding.c
+cc -std=c89 -O3 -Wall -g -Iinclude -Isrc -pthread   -c -o src/ref.o src/ref.c
+ar rcs libargon2.a src/argon2.o src/core.o src/blake2/blake2b.o src/thread.o src/encoding.o src/ref.o
+sed '/^##.*$/d; s#@PREFIX@#/usr#g; s#@EXTRA_LIBS@##g; s#@UPSTREAM_VER@#ZERO#g; s#@HOST_MULTIARCH@#lib#g; s#@INCLUDE@#include#g;' < 'libargon2.pc.in' > 'libargon2.pc'
+install: can't stat 'libargon2.so.1': No such file or directory
+Previous command exited with 1
