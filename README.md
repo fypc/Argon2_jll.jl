@@ -10,7 +10,7 @@ For more details about JLL packages and how to use them, see `BinaryBuilder.jl` 
 
 The tarballs for `argon2_jll.jl` have been built from these sources:
 
-* git repository: https://github.com/P-H-C/phc-winner-argon2.git (revision: `f57e61e19229e23c4445b85494dbf7c07de721cb`)
+* git repository: https://github.com/P-H-C/phc-winner-argon2.git (revision: `62358ba2123abd17fccf2a108a301d4b52c01a7c`)
 
 ## Platforms
 
