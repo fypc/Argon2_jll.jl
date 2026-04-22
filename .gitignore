@@ -1,5 +1,7 @@
 # Build artifacts
 deps/
+build/
+products/
 Manifest.toml
 
 # macOS
